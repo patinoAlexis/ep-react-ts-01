@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import { CustomMenu } from "@/components/custom/CustomMenu.tsx";
+import { CustomBreadCrumbs } from "@/components/custom/CustomBreadCrumbs.tsx";
 
 export const HeroesLayout = () => {
   return (

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button.tsx";
-import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const CustomPagination = ({ totalPages }: Props) => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage] = useState(1);
   const [disableNext, setDisabledNext] = useState(false);
   const [disablePrevious, setDisabledPrevious] = useState(false);
   useEffect(() => {

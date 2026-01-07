@@ -5,6 +5,7 @@ import { SearchControls } from "@/heroes/pages/search/ui/SearchControl.tsx";
 import { HeroGrid } from "@/heroes/components/HeroGrid.tsx";
 import { useState } from "react";
 import { CustomPagination } from "@/components/custom/CustomPagination.tsx";
+import { CustomBreadCrumbs } from "@/components/custom/CustomBreadCrumbs.tsx";
 
 export const HomePage = () => {
   const [activeTab, setActiveTab] = useState<
@@ -18,6 +19,8 @@ export const HomePage = () => {
           title="Super's Universe"
           description="Discover, explore, and manage your favorite superheroes and villains"
         />
+        <CustomBreadCrumbs></CustomBreadCrumbs>
+
         {/* Stats Dashboard */}
         <HeroStats />
         {/* Controls */}

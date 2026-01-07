@@ -13,7 +13,7 @@ export const CustomMenu = () => {
     return path === pathname;
   };
   return (
-    <NavigationMenu>
+    <NavigationMenu className="my-4">
       <NavigationMenuList className="flex">
         {/*Home*/}
         <NavigationMenuItem>
